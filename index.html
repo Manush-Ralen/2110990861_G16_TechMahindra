@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Example</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+    </script>
+</head>  
 <body>
     <div class="navbar-container">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Gallery</a>
-        <a href="#">Button </a>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">Login/Register</button>
+            <div id="dropdown" class="dropdown-content">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
     </div>
+    
+    <div class="main">
+        <div class="section">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="text">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit ducimus, voluptate voluptas vero dolores illo sit delectus aspernatur minus doloribus neque in pariatur laboriosam sapiente odit facilis nostrum iure blanditiis debitis omnis id! Cum totam harum laudantium perspiciatis deserunt illo sapiente, iure eius voluptatum. Rerum dolor libero ducimus expedita.</p>
+            </div>
+        </div>
+        <div class="section" style="flex-direction: row-reverse;">
+            <img src="image1.jpg" alt="Image 2">
+            <div class="text">
+                <h2>Section 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, porro. Explicabo id a quis? Laboriosam possimus officiis eaque labore qui ad ipsum fugiat voluptatem error veritatis consequatur porro eius quas, alias facere, voluptates nulla rem ipsam nihil dolorum libero, ratione minima! Quis, tempore ratione? Obcaecati quos error perferendis eos neque?</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        this is footer section
+    </footer>
 </body>
 </html>
