@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+  }
+  
+  .nav-button {
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 20px;
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+  
+  .hero p {
+    margin: 15px 0 30px;
+    max-width: 520px;
+  }
+  
+  .hero-button {
+    padding: 15px 50px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .hero-button:active {
+    transform: translateY(4px);
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-number {
+    font-weight: 700;
+    font-size: 4.2rem;
+  }
+  
+  /* Section Blocks */
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(207, 100%, 98%);
+    padding: 30px;
+    text-align: start;
+  }
+  
+  .section-text {
+    max-width: 580px;
+    padding-left: 50px;
+  }
+  
+  .section img {
+    width: 40%;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-left, .footer-right {
+    flex: 1;
+  }
+  
+  .footer-right input {
+    width: 330px;
+    padding: 11px;
+    border-radius: 5px;
+  }
+  
+  .footer-right button {
+    padding: 11px 30px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section img {
+      width: 80%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
