@@ -1,2 +1,2 @@
 # Screenshot
-![Desktop UI](./design/output.png "Desktop UI design")
+![Desktop UI](./design/output.jpg "Desktop UI design")
